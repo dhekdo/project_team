@@ -27,20 +27,15 @@ a {
 
 /* 메인 슬라이드 구좌 */
 .top {
-    position: relative;
     width: 100%;
     height: 100vh;
 }
 .top .slider_wrap {
-    position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 .top .slider_wrap .slider {
-    position: absolute;
-    top: 0;
     width: 400%;
     height: 100%;
     display: flex;
@@ -48,11 +43,9 @@ a {
 .top .slider_wrap .slider li {
     position: relative;
     width: 25%;
-    height: 100%;
 }
 .top .slider_wrap .slider img {
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
 }
@@ -62,11 +55,10 @@ a {
 }
 .top .slider_wrap .slider .li_fir > img {
     position: absolute;
-    top: 75%;
+    top: 74%;
     left: 50%;  
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 53%;
+    width: 95rem;
 }
 .top .slider_wrap .slider .li_fir > .slide_text {
     position: absolute;
@@ -81,6 +73,10 @@ a {
     font-size: 9rem;
     font-weight: 700;
 }
+.top .slider_wrap .slider .li_fir > .slide_text_stroke > p {
+    font-size: 9rem;
+    font-weight: 700;
+}
 .top .slider_wrap .slider .li_fir > .slide_text_stroke {
     position: absolute;
     top: 29.9%;
@@ -90,10 +86,7 @@ a {
     color: #FBF5F0;
     z-index: 0;
 }
-.top .slider_wrap .slider .li_fir > .slide_text_stroke > p {
-    font-size: 9rem;
-    font-weight: 700;
-}
+
 /* 메인 슬라이드 애니메이션 */
 @keyframes upDown {
     0% {
@@ -105,10 +98,10 @@ a {
 }
 .top .slider_wrap .slider .li_fir .slide_ico1 {
     position: absolute;
-    bottom: 3%;
-    right: 27%;
+    bottom: 33rem;
+    right: 52rem;
+    transform: translate(-50%, -50%);
     width: 29rem;
-    height: 29rem;
     animation: upDown 1s linear infinite alternate-reverse;
 }
 .top .slider_wrap .slider .li_fir .slide_ico1 img {
@@ -156,6 +149,11 @@ a {
     transform: rotate(-20deg);
     border: 2px solid black;
     box-shadow: 6px 6px black;
+    transition: all 0.3s;
+}
+.top .slider_wrap .slider .li_fir .slide_ico3:hover{
+    margin-bottom: 2rem;
+    cursor: pointer;
 }
 .top .slider_wrap .slider .li_fir .slide_ico3 span::before {
     content: "Oven";
@@ -173,6 +171,11 @@ a {
     transform: rotate(10deg);
     border: 2px solid black;
     box-shadow: 6px 6px black;
+    transition: all 0.3s;
+}
+.top .slider_wrap .slider .li_fir .slide_ico4:hover{
+    margin-bottom: 2rem;
+    cursor: pointer;
 }
 .top .slider_wrap .slider .li_fir .slide_ico4 span::before {
     content: "Basasak";
@@ -201,11 +204,10 @@ a {
     position: relative;
     overflow: hidden;
 }
-.oven_menu h5 {
+h5 {
     font-size: 5.5rem;
     text-align: center;
     padding: 6% 0;
-    
 }
 .oven_menu ul {
     display: flex;
@@ -256,6 +258,7 @@ a {
 .goobnews .news_wrap {
     width: 100%;
     text-align: left;
+    margin-bottom: 12%;
     
 }
 .goobnews .news_wrap > div {
@@ -280,7 +283,7 @@ a {
 .goobnews .news_wrap .news_pic {
     position: absolute;
     top: -13rem;
-    right: 12rem;
+    right: 10rem;
     width: 40rem;
     height: 40rem;
     transform: rotate(-12deg);
@@ -293,4 +296,84 @@ a {
 .goobnews .news_wrap img {
     width: 100%;
     height: 100%;
+}
+
+/* 굽스터 구좌 */
+.goobster {
+    width: 100%;
+    background-color: rgba(227, 130, 17, 0.13);
+}
+.goobster h5 {
+    line-height: 1;
+}
+.goobster .goobster_wrap {
+    padding-bottom: 5.5%;
+}
+.goobster ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.goobster ul li {
+    width: 12%;
+    border: 1px solid black;
+}
+.goobster ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 굽튜브 구좌 */
+.goobtube {
+    width: 100%;
+    margin-top: 5%;
+}
+.goobtube .tube_text {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+@keyframes rolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-20%);
+    }
+}
+.goobtube .tube_text > ul {
+    width: 200%;
+    display: flex;
+    padding: 1.2% 0;
+    animation: rolling 30s linear infinite;
+}
+.goobtube .tube_text > ul > li {
+    font-size: 3.2rem;
+    font-weight: 600;
+    padding: 0 0.3%;
+}
+.goobtube .tube_img {
+    margin: 5% auto;
+    width: 80%;
+    overflow: hidden;
+}
+.goobtube .tube_img > ul {
+    width: 200%;
+    display: flex;
+    align-items: center;
+}
+.goobtube .tube_img > ul > li {
+    width: 16.5%;
+    padding: 0 0.5%;
+}
+.goobtube .tube_img > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.goobtube .tube_img > ul > li > a >  img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
 }

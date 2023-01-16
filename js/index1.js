@@ -15,3 +15,13 @@ $(".news_wrap > div").hover(function(){
 });
 
 
+
+// 굽튜브 애니메이션
+function slideTube(){
+    $(".tube_img ul").stop().animate({marginLeft : '-33%'}, 1000, function(){
+        $(".tube_img ul li:first").appendTo(".tube_img ul");
+        $(".tube_img ul").css({marginLeft : 0});
+    });
+}
+setInterval (slideTube, 3000);
+
