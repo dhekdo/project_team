@@ -16,6 +16,16 @@ $(".news_wrap > div").hover(function(){
 
 
 
+// 굽스터 애니메이션
+// function slideSter(){
+//     $(".goobster_wrap ul").stop().animate({marginLeft : '-6%'}, 1000, function(){
+//         $(".goobster_wrap ul li:first").appendTo(".goobster_wrap ul");
+//         $(".goobster_wrap ul").animate({marginLeft : '-6%'});
+//     });
+// }
+// setInterval (slideSter, 3000);
+
+
 // 굽튜브 애니메이션
 function slideTube(){
     $(".tube_img ul").stop().animate({marginLeft : '-33%'}, 1000, function(){
