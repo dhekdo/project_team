@@ -29,9 +29,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #header .goobne:hover .return{width: 80%; height: 60%; margin: auto; padding: 1%; display: flex; justify-content: center; align-items: center;}
 
     #section{width: 100%; height: auto; margin: auto;}
-    #section .colum_main{width: 98%; height: auto; margin: auto; padding: 2.5rem 0;}
-    #section .colum_main .crispy_discovery{width: 100%; transition: all 0.1s; animation: crispy_discovery 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-    @keyframes crispy_discovery{
+    #section .tra_main{width: 98%; height: auto; margin: auto; padding: 2.5rem 0;}
+    #section .tra_main .spicy_temptation{width: 100%; transition: all 0.1s; animation: spicy_temptation 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes spicy_temptation{
         0%{
             margin-left: -1%;
         }
@@ -39,17 +39,14 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
             margin-left: 1%;
         }
     }
-    #section .colum_main .columbasak{width: 100%;}
+    #section .tra_main .basaktra{width: 100%;}
 
-    #section .colum_sub{width: 100%; height: 126vw; margin: auto; position: relative;}
-    #section .colum_sub .colum_info{width: 100%; position: absolute; top: 44%;}
-    #section .colum_sub .oven_basasak{width: 100%; position: absolute; top: 5%;}
+    #section .tra_sub{width: 100%; height: 126vw; margin: auto; position: relative;}
+    #section .tra_sub .tra_info{width: 100%; position: absolute; top: 44%;}
+    #section .tra_sub .pepper_basasak{width: 100%; position: absolute; top: 5%;}
 
-    #section .eat{width: 100%; height: 40vw; background: rgba(219,135,32,0.7); position: relative;}
-    #section .eat .saecham{width: 100%; position: absolute; left: 0;}
-
-    #section .move{width: 100%; height: auto;}
-    #section .move video{width: 100%;}
+    #section .eat{width: 100%; height: 40vw; background: rgba(192,181,95,0.7); position: relative;}
+    #section .eat .chicken{width: 100%; position: absolute; left: 0;}
 
     #section .basasak_univ{width: 100%; height: auto; text-align: center;}
     #section .basasak_univ .basasak_info{width: 100%;}
@@ -84,9 +81,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #header .goobne:hover .return{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
 
     #section{width: 100%; height: auto; margin: auto;}
-    #section .colum_main{width: 100%; height: auto; margin: auto; padding: 2.5rem 0;}
-    #section .colum_main .crispy_discovery{width: 100%; transition: all 0.1s; animation: crispy_discovery 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-    @keyframes crispy_discovery{
+    #section .tra_main{width: 100%; height: auto; margin: auto; padding: 2.5rem 0;}
+    #section .tra_main .spicy_temptation{width: 100%; transition: all 0.1s; animation: spicy_temptation 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes spicy_temptation{
         0%{
             margin-left: -1%;
         }
@@ -94,17 +91,14 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
             margin-left: 1%;
         }
     }
-    #section .colum_main .columbasak{width: 100%;}
+    #section .tra_main .basaktra{width: 100%;}
 
-    #section .colum_sub{width: 100%; height: 126vw; margin: auto; position: relative;}
-    #section .colum_sub .colum_info{width: 100%; position: absolute; top: 44%;}
-    #section .colum_sub .oven_basasak{width: 100%; position: absolute; top: 5%;}
+    #section .tra_sub{width: 100%; height: 126vw; margin: auto; position: relative;}
+    #section .tra_sub .tra_info{width: 100%; position: absolute; top: 44%;}
+    #section .tra_sub .pepper_basasak{width: 100%; position: absolute; top: 5%;}
 
-    #section .eat{width: 100%; height: 40vw; background: rgba(219,135,32,0.7); position: relative;}
-    #section .eat .saecham{width: 100%; position: absolute; left: 0;}
-
-    #section .move{width: 100%; height: auto;}
-    #section .move video{width: 100%;}
+    #section .eat{width: 100%; height: 40vw; background: rgba(192,181,95,0.7); position: relative;}
+    #section .eat .chicken{width: 100%; position: absolute; left: 0;}
 
     #section .basasak_univ{width: 100%; height: auto; text-align: center;}
     #section .basasak_univ .basasak_info{width: 100%;}
@@ -139,9 +133,9 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
     #header .goobne:hover .return{width: 80%; height: 60%; margin: 6% 10%; padding: 1%; display: flex; justify-content: center; align-items: center;}
 
     #section{width: 100%; height: auto; margin: auto;}
-    #section .colum_main{width: 80%; height: auto; margin: auto; padding: 2.5rem;}
-    #section .colum_main .crispy_discovery{width: 100%; transition: all 0.1s; animation: crispy_discovery 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
-    @keyframes crispy_discovery{
+    #section .tra_main{width: 80%; height: auto; margin: auto; padding: 2.5rem;}
+    #section .tra_main .spicy_temptation{width: 100%; transition: all 0.1s; animation: spicy_temptation 2s; animation-direction: alternate; animation-timing-function: ease-in-out; animation-iteration-count: infinite;}
+    @keyframes spicy_temptation{
         0%{
             margin-left: -1%;
         }
@@ -149,17 +143,14 @@ body{background: url(https://www.goobne.co.kr/2206_micro_img/main_BG.jpg); backg
             margin-left: 1%;
         }
     }
-    #section .colum_main .columbasak{width: 100%;}
+    #section .tra_main .basaktra{width: 100%;}
 
-    #section .colum_sub{width: 100%; height: 40vw; margin: auto; position: relative;}
-    #section .colum_sub .colum_info{width: 56%; position: absolute; top: 5%; left: 3%;}
-    #section .colum_sub .oven_basasak{width: 56%; position: absolute; top: 10%; right: 0;}
+    #section .tra_sub{width: 100%; height: 40vw; margin: auto; position: relative;}
+    #section .tra_sub .tra_info{width: 56%; position: absolute; top: 5%; left: 3%;}
+    #section .tra_sub .pepper_basasak{width: 56%; position: absolute; top: 10%; right: 0;}
 
-    #section .eat{width: 100%; height: 32vw; background: rgba(219,135,32,0.7); position: relative;}
-    #section .eat .saecham{width: 80%; position: absolute; top: 0; left: 10%;}
-
-    #section .move{width: 100%; height: auto; padding: 4% 3%;}
-    #section .move video{width: 100%;}
+    #section .eat{width: 100%; height: 32vw; background: rgba(192,181,95,0.7); position: relative;}
+    #section .eat .chicken{width: 80%; position: absolute; top: 0; left: 10%;}
 
     #section .basasak_univ{width: 100%; height: auto; padding: 3%; text-align: center;}
     #section .basasak_univ .basasak_info{width: 100%;}
