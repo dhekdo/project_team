@@ -1,4 +1,4 @@
-// 해더 햄버거 메뉴 클릭 이벤트 
+// 헤더 햄버거 메뉴 클릭 이벤트 
 $(function () {
     $(".sub_menu").click(function () {
         $("#aside").css({ "display": "block" });
@@ -20,7 +20,6 @@ $(function () {
         $("#side_bg").hide();
     });
 });
-// 햄버거 메뉴 끝
 
 // 햄버거 메뉴 리스트 시작
 $(function () {
@@ -76,6 +75,17 @@ function slide(){
 }
 setInterval (slide, 3000);
 
+// 오븐메뉴 애니메이션
+function slideOven(){
+    $(".oven_menu ul").stop().animate({marginLeft : '-25%'}, 800, function(){
+        $(".oven_menu ul li:first").appendTo(".oven_menu ul");
+        $(".oven_menu ul").css({marginLeft : '-2.9%'});
+    });
+}
+setInterval (slideOven, 2500);
+
+
+
 // 굽뉴스 마우스 오버 효과
 $(".news_wrap > div").hover(function(){
     $(this).children(".news_pic").stop().fadeIn();
@@ -86,13 +96,13 @@ $(".news_wrap > div").hover(function(){
 
 
 // 굽스터 애니메이션
-// function slideSter(){
-//     $(".goobster_wrap ul").stop().animate({marginLeft : '-6%'}, 1000, function(){
-//         // $(".goobster_wrap ul li:first").appendTo(".goobster_wrap ul");
-//         $(".goobster_wrap ul").animate({marginLeft : '-6%'});
-//     });
-// }
-// setInterval (slideSter, 1000);
+function slideSter(){
+    $(".goobster_wrap ul").stop().animate({marginLeft : '-24%'}, 1000, function(){
+        $(".goobster_wrap ul li:first").appendTo(".goobster_wrap ul");
+        $(".goobster_wrap ul").css({marginLeft : '-9.6%'});
+    });
+}
+setInterval (slideSter, 2000);
 
 
 
