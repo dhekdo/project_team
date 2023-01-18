@@ -41,16 +41,8 @@ $(function () {
         }
     });
     
-    // $('#aside').on('scroll touchmove mousewheel', function (event) {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //     return false;
-    // });
-
-    // $('#side_menu_area').off('scroll touchmove mousewheel');
 });
 // 화살표 끝
-
 // 햄버거 메뉴 리스트 끝
 
 // 헤더 상단 도달시 배경색 변경
@@ -67,13 +59,20 @@ $(window).scroll(function(){
 });
 
 // 메인 슬라이더
+var i = 0;
 function slide(){
     $(".slider").stop().animate({marginLeft : '-100%'}, function(){
+        i++;
+        if( i >= $(".slide_circle li").length ){
+            i = 0;
+        }
+        $(".slide_circle li").eq(i).addClass("slide_circle_on").siblings().removeClass("slide_circle_on");
         $(".slider li:first").appendTo(".slider");
         $(".slider").css({marginLeft : 0});
     });
 }
 setInterval (slide, 3000);
+
 
 // 오븐메뉴 애니메이션
 function slideOven(){
@@ -83,7 +82,6 @@ function slideOven(){
     });
 }
 setInterval (slideOven, 2500);
-
 
 
 // 굽뉴스 마우스 오버 효과
