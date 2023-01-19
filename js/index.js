@@ -48,7 +48,6 @@ $(function () {
 // 헤더 상단 도달시 배경색 변경
 $(window).scroll(function(){
     let hScroll = $(this).scrollTop();
-    console.log(hScroll);
     
     if( hScroll > 300 ){
         $("#header").addClass("header_bg_on");
@@ -71,7 +70,7 @@ function slide(){
         $(".slider").css({marginLeft : 0});
     });
 }
-setInterval (slide, 3000);
+// setInterval (slide, 3000);
 
 
 // 오븐메뉴 애니메이션
@@ -82,6 +81,17 @@ function slideOven(){
     });
 }
 setInterval (slideOven, 2500);
+
+// 오븐메뉴 반응형
+if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){ 
+    function slideOven(){
+        $(".oven_menu ul").stop().animate({marginLeft : '-25%'}, 800, function(){
+            $(".oven_menu ul li:first").appendTo(".oven_menu ul");
+            $(".oven_menu ul").css({marginLeft : '1.8%'});
+        });
+    }
+    setInterval (slideOven, 2500);
+  }
 
 
 // 굽뉴스 마우스 오버 효과
@@ -102,7 +112,16 @@ function slideSter(){
 }
 setInterval (slideSter, 2000);
 
-
+// 굽스터 반응형
+if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){ 
+    function slideSter(){
+        $(".goobster_wrap ul").stop().animate({marginLeft : '-48%'}, 1000, function(){
+            $(".goobster_wrap ul li:first").appendTo(".goobster_wrap ul");
+            $(".goobster_wrap ul").css({marginLeft : '-20%'});
+        });
+    }
+    setInterval (slideSter, 2000);
+  }
 
 
 // 굽튜브 애니메이션
@@ -113,3 +132,19 @@ function slideTube(){
     });
 }
 setInterval (slideTube, 3000);
+
+// 굽튜브 반응형
+if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){ 
+    function slideTube(){
+        $(".tube_img ul").stop().animate({marginLeft : '-50%'}, 1000, function(){
+            $(".tube_img ul li:first").appendTo(".tube_img ul");
+            $(".tube_img ul").css({marginLeft : 0});
+        });
+    }
+    setInterval (slideTube, 3000);
+  }
+
+// 사이즈 변경시 새로고침
+window.onresize = function(){
+    document.location.reload();
+};

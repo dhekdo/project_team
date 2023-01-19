@@ -81,6 +81,7 @@ a {
 .logo {
   width: 105px;
   cursor: pointer;
+  margin-right: 1%;
 }
 
 .inner {
@@ -96,7 +97,7 @@ a {
   align-items: center;
   /* padding: 0.3% 1%; */
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0.4vw;
+  border-radius: 20px
 }
 
 .near_shop>button {
@@ -127,15 +128,20 @@ input::placeholder {
   font-weight: 800;
   font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
 }
-
+.menu {
+  width: 60%;
+  margin: 0 auto;
+}
 .menu>ul {
   display: flex;
+  justify-content: space-evenly;
   font-weight: 800 !important;
+  margin: 0 auto;
 }
 
-.menu li {
+/* .menu li {
   margin-right: 8rem;
-}
+} */
 
 .menu li>a {
   text-decoration: none;
@@ -165,11 +171,11 @@ input::placeholder {
 
 .sub_menu {
   width: 1.5vw;
-  height: 1.3vw;
+  height: 1vw;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -195,7 +201,7 @@ input::placeholder {
   transition: all 0.3s;
   width: 100%;
   right: 0;
-  top: 4px;
+  top: 0;
 }
 
 .line:nth-of-type(2) {
@@ -207,7 +213,7 @@ input::placeholder {
   transition: all 0.3s;
   width: 100%;
   left: 0;
-  bottom: 4px;
+  bottom: 0;
 }
 
 /* 보이는헤더 끝 */
@@ -315,8 +321,6 @@ input::placeholder {
   padding-left: 0.7rem;
   /* display: none; */
 }
-
-
 
 .list_li {
   display: none;
@@ -676,6 +680,14 @@ h5 {
   border-bottom: 1.5px solid black;
 }
 
+.goobnews .news_wrap p {
+  font-size: 3.4rem;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .goobnews .news_wrap p>a {
   font-size: 3.4rem;
   font-weight: 700;
@@ -692,7 +704,7 @@ h5 {
 .goobnews .news_wrap .news_pic {
   position: absolute;
   top: -13rem;
-  right: 10rem;
+  right: 12rem;
   width: 40rem;
   height: 40rem;
   transform: rotate(-12deg);
@@ -758,7 +770,7 @@ h5 {
 /* 굽튜브 구좌 */
 .goobtube {
   width: 100%;
-  margin-top: 5%;
+  margin: 5% 0;
 }
 
 .goobtube .tube_text {
@@ -774,12 +786,12 @@ h5 {
   }
 
   100% {
-    transform: translateX(-20%);
+    transform: translateX(-50%);
   }
 }
 
 .goobtube .tube_text>ul {
-  width: 200%;
+  width: 3671.55px;
   display: flex;
   padding: 1.2% 0;
   animation: rolling 30s linear infinite;
@@ -792,8 +804,8 @@ h5 {
 }
 
 .goobtube .tube_img {
-  margin: 5% auto;
-  width: 80%;
+  margin: 4% auto;
+  width: 90%;
   overflow: hidden;
 }
 
@@ -801,6 +813,7 @@ h5 {
   width: 200%;
   display: flex;
   align-items: center;
+  margin: 3% 0;
 }
 
 .goobtube .tube_img>ul>li {
