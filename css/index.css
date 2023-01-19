@@ -441,6 +441,7 @@ input::placeholder {
   color: #D4000B;
   font-family: 'Rubik', sans-serif;
   z-index: 1;
+  width: 100%;
 }
 
 .top .slider_wrap .slider .li_fir>.slide_text>p {
@@ -831,6 +832,11 @@ h5 {
   width: 100%;
   height: 100%;
   border: 1px solid black;
+}
+
+/* 900px 이하 미니 푸터 */
+.mini_footer {
+  display: none;
 }
 
 /* 우측 미니 메뉴 */
