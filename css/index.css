@@ -171,7 +171,7 @@ input::placeholder {
 
 .sub_menu {
   width: 1.5vw;
-  height: 1vw;
+  height: 1.2vw;
   cursor: pointer;
   display: flex;
   flex-direction: column;

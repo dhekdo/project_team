@@ -70,7 +70,7 @@ function slide(){
         $(".slider").css({marginLeft : 0});
     });
 }
-// setInterval (slide, 3000);
+setInterval (slide, 3000);
 
 
 // 오븐메뉴 애니메이션
@@ -103,6 +103,15 @@ if(matchMedia("(min-width: 901px) and (max-width: 1020px)").matches){
     setInterval (slideOven, 2500);
   }
 
+  if(matchMedia("(min-width: 601px) and (max-width: 900px)").matches){ 
+    function slideOven(){
+        $(".oven_menu ul").stop().animate({marginLeft : '-41.5%'}, 800, function(){
+            $(".oven_menu ul li:first").appendTo(".oven_menu ul");
+            $(".oven_menu ul").css({marginLeft : '2%'});
+        });
+    }
+    setInterval (slideOven, 2500);
+  }
 
 
 // 굽뉴스 마우스 오버 효과
@@ -144,6 +153,16 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     setInterval (slideSter, 2000);
   }
 
+  if(matchMedia("(min-width: 601px) and (max-width: 900px)").matches){ 
+    function slideSter(){
+        $(".goobster_wrap ul").stop().animate({marginLeft : '-48%'}, 1000, function(){
+            $(".goobster_wrap ul li:first").appendTo(".goobster_wrap ul");
+            $(".goobster_wrap ul").css({marginLeft : '-20%'});
+        });
+    }
+    setInterval (slideSter, 2000);
+  }
+
 
 // 굽튜브 애니메이션
 function slideTube(){
@@ -168,6 +187,16 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
   if(matchMedia("(min-width: 901px) and (max-width: 1020px)").matches){ 
     function slideTube(){
         $(".tube_img ul").stop().animate({marginLeft : '-50%'}, 1000, function(){
+            $(".tube_img ul li:first").appendTo(".tube_img ul");
+            $(".tube_img ul").css({marginLeft : 0});
+        });
+    }
+    setInterval (slideTube, 3000);
+  }
+
+  if(matchMedia("(min-width: 601px) and (max-width: 900px)").matches){ 
+    function slideTube(){
+        $(".tube_img ul").stop().animate({marginLeft : '-100%'}, 1000, function(){
             $(".tube_img ul li:first").appendTo(".tube_img ul");
             $(".tube_img ul").css({marginLeft : 0});
         });
