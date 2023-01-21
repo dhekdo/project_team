@@ -721,6 +721,10 @@ h5 {
   height: 100%;
 }
 
+.goobnews .mini_news_wrap {
+  display: none;
+}
+
 /* 굽스터 구좌 */
 .goobster {
   width: 100%;

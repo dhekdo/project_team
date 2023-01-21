@@ -670,7 +670,7 @@ a {
         text-align: center;
         padding: 6% 0 9%;
       }
-      
+      /* 900px이하 기존 굽뉴스 노출안됨 */
       .goobnews .news_wrap {
         width: 100%;
         text-align: left;
@@ -727,6 +727,66 @@ a {
       .goobnews .news_wrap img {
         width: 100%;
         height: 100%;
+      }
+      /* 기존 굽뉴스 끝 */
+
+      /* 900px이하 굽뉴스 */
+      .goobnews .mini_news_wrap {
+        display: block;
+      }
+
+      .mini_news_wrap {
+        width: 100%;
+        margin-bottom: 17%;
+      }
+
+      .mini_news {
+        width: 98%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid black;
+        cursor: pointer;
+      }
+
+      .mini_news:hover {
+        background-color: #050000;
+      }
+
+      .mini_news:hover span {
+        color: #fff;
+      }
+
+      .mini_news:last-child {
+        border-bottom: 1px solid black;
+      }
+
+      .mini_news div:nth-child(1) {
+        width: 15%;
+        margin-right: 3%;
+      } 
+
+      .mini_news div img {
+        width: 100%;
+        height: 100%;
+      }
+      .mini_news div:nth-child(2) {
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 2.6rem;
+        font-family: 'NanumSquareRound';
+      }
+  
+      .mini_news span {
+        font-size: 2.6rem;
+        font-weight: 700;
+        white-space: nowrap;
+        font-family: 'NanumSquareRound';
+      }
+      .mini_news span:nth-child(1) {
+        font-size: 2rem;
+        font-weight: 500;
       }
       
       /* 굽스터 구좌 */
@@ -801,7 +861,7 @@ a {
       }
       
       .goobtube .tube_text>ul {
-        width: 3671.55px;
+        width: 2364.66px;
         display: flex;
         padding: 1.2% 0;
         animation: rolling 30s linear infinite;
@@ -958,6 +1018,7 @@ a {
       }
 
       .mini_footer div p {
+        font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
         color: #fff;
         font-size: 11px;
         font-weight: 900;
@@ -979,6 +1040,7 @@ a {
       }
       
       .mini_footer ul p {
+        font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
         color: #999891;
         font-size: 1.4rem;
         font-weight: 900;
@@ -1085,6 +1147,7 @@ a {
       
       .footer_last_info {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
       }
