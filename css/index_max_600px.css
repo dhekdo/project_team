@@ -500,8 +500,8 @@ a {
       
       .top .slider_wrap .slider .li_fir .slide_ico2 {
         position: absolute;
-        bottom: 1%;
-        left: -18%;
+        bottom: 6%;
+        left: -15%;
         width: 145px;
         transform: rotate(5deg);
         animation: upDown 1s linear infinite alternate;
@@ -538,8 +538,8 @@ a {
         position: absolute;
         width: 10rem;
         height: 3.1rem;
-        left: 2rem;
-        bottom: 5rem;
+        left: 2.5rem;
+        bottom: 7rem;
         background-color: #AABBFF;
         transform: rotate(-20deg);
         border: 2px solid black;
@@ -564,7 +564,7 @@ a {
         width: 10rem;
         height: 3.1rem;
         right: 2rem;
-        bottom: 16rem;
+        bottom: 17.5rem;
         background-color: #FFAC9F;
         transform: rotate(10deg);
         border: 2px solid black;

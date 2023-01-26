@@ -70,7 +70,7 @@ function slide(){
         $(".slider").css({marginLeft : 0});
     });
 }
-setInterval (slide, 3000);
+// setInterval (slide, 3000);
 
 
 // 오븐메뉴 애니메이션
