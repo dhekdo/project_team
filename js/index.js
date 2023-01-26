@@ -70,7 +70,7 @@ function slide(){
         $(".slider").css({marginLeft : 0});
     });
 }
-// setInterval (slide, 3000);
+setInterval (slide, 3000);
 
 
 // 오븐메뉴 애니메이션
@@ -150,6 +150,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".goobster_wrap ul").css({marginLeft : '-20%'});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideSter, 2000);
   }
 
@@ -160,6 +164,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".goobster_wrap ul").css({marginLeft : '-20%'});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideSter, 2000);
   }
 
@@ -170,6 +178,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".goobster_wrap ul").css({marginLeft : '-20%'});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideSter, 2000);
   }
 
@@ -201,6 +213,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".tube_img ul").css({marginLeft : 0});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideTube, 3000);
   }
 
@@ -211,6 +227,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".tube_img ul").css({marginLeft : 0});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideTube, 3000);
   }
 
@@ -221,6 +241,10 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
             $(".tube_img ul").css({marginLeft : 0});
         });
     }
+    // 사이즈 변경시 새로고침
+    window.onresize = function () {
+        document.location.reload();
+    };
     setInterval (slideTube, 3000);
   }
 
@@ -234,7 +258,5 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     setInterval (slideTube, 3000);
   }
 
-// 사이즈 변경시 새로고침
-window.onresize = function(){
-    document.location.reload();
-};
+
+
