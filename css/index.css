@@ -274,6 +274,7 @@ input::placeholder {
   background: none;
   border: none;
   cursor: pointer;
+  padding-right: 5%;
 }
 
 .login_area {
