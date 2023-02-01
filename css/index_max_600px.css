@@ -1162,17 +1162,22 @@ a {
       .footer_last_info {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
       }
       
       .last_info_text {
+        width: 100%;
         color: rgba(255, 255, 255, 0.5);
         font-size: 1.1rem;
         margin-right: 0.2rem;
         font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
       }
       
+      .tel {
+        width: 30%;
+      }
+
       .footer_line_bar {
         width: 0.1rem;
         height: 0.7vw;
@@ -1181,6 +1186,7 @@ a {
         font-size: 0.5vw;
         margin-right: 0.2rem;
         margin-top: 0.3rem;
+        display: none;
       }
 }
 
