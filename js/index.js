@@ -152,7 +152,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideSter, 2000);
   }
@@ -166,7 +166,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideSter, 2000);
   }
@@ -180,7 +180,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideSter, 2000);
   }
@@ -215,7 +215,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideTube, 3000);
   }
@@ -229,7 +229,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideTube, 3000);
   }
@@ -243,7 +243,7 @@ if(matchMedia("(min-width: 1021px) and (max-width: 1600px)").matches){
     }
     // 사이즈 변경시 새로고침
     window.onresize = function () {
-        window.reload();
+        window.location.reload();
     };
     setInterval (slideTube, 3000);
   }
